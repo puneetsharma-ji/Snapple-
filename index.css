@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+:root{
+    --bg-clr: #f5f5f5;
+    --blue-clr: #356bb4;
+    --red-clr: #c72f2f;
+    --black-clr: #000000;
+    --white-clr: #ffffff;
+    --light-black: #272727;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    min-height: 100vh;
+    background-color: var(--bg-clr);
+    padding-inline: 4rem;
+}
+
+#header{
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#logo{
+    font-family: "Great Vibes", cursive;
+    font-size: 2.2rem;
+    color: var(--blue-clr);
+    font-weight: 900;
+    letter-spacing: .1rem;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.navlink{
+    font-size: 1rem;
+    color: var(--black-clr);
+}
+
+#section{
+    height: 87vh;
+    position: relative;
+}
+
+#content{
+    width: 100%;
+    height: 100%;
+}
+
+#content h1{
+    text-align: center;
+    font-size: 17rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1rem;
+    color: var(--light-black);
+}
+
+#bottom-content{
+    padding-inline: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#bottom-content button{
+    font-size: 1rem;
+    color: var(--white-clr);
+    border: none;
+    background-color: var(--light-black);
+    padding: 1rem 2rem;
+    transition: transform .3s ease-in-out;
+}
+
+#bottom-content button:hover{
+    transform: scale(1.08);
+}
+
+#bottom-content p span{
+    color: var(--red-clr);
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-right: .5rem;
+}
+
+#bottom-content p{
+    max-width: 350px;
+}
+
+img{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    height: auto;
+}
+
+#icons{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background: var(--blue-clr);
+    padding: 1rem 1.5rem;
+}
+
+.icon{
+    margin-block: 1.5rem;
+}
+
+.icon a{
+    color: var(--white-clr);
+    font-size: 1.7rem;
+}
